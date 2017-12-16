@@ -1,0 +1,42 @@
+# Junk theme for conkey by nashman
+
+own_window yes
+own_window_type normal
+own_window_transparent yes
+own_window_hints undecorated,below,skip_taskbar,skip_pager,sticky
+own_window_color 000000
+own_window_class Conkey
+own_window_title Junk Top Left
+
+minimum_size 200 360
+maximum_ width 250
+
+gap_x 50
+gap_y 290
+
+alignment tl
+
+# colors
+default_color 100c0c
+color1 954316 #Saddle brown
+color3 64554f #Dim Gray
+
+# Borders
+draw_borders no
+border_width 2
+
+# Miscellaneous
+background no
+use_spacer none
+no_buffers yes
+short_units no
+pad_percents 2
+imlib_cache_size 0
+double_buffer yes
+
+# good stuff
+update_interval 1
+
+TEXT
+${color1}CPU1: ${color3}${cpu cpu1}% ${freq_g (0)} Ghz${color1}     CPU2: ${color3}${cpu cpu1}% ${freq_g (1)} GHz
+${color3}${cpugraph 15 -t}
